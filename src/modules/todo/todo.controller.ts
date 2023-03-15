@@ -47,6 +47,7 @@ export class TodoController {
   }
   @Post('/update')
   @HttpCode(200)
+  @UsePipes(ValidationPipe)
   async updateTodo(@Query() id, @Body() todoData: CreateTodoDto) {
     return await this.todoService.updateTodo(id, todoData);
   }
