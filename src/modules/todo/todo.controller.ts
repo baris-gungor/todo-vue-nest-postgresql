@@ -20,11 +20,11 @@ export class TodoController {
   async regex(@Query() regexdata) {
     return await this.todoService.testRegex(regexdata);
   }
-  // @Delete('')
-  // @HttpCode(200)
-  // async removeTodo(@Query() id) {
-  //   return await this.todoService.removeTodo(id);
-  // }
+  @Delete('')
+  @HttpCode(200)
+  async removeTodo(@Query() id) {
+    return await this.todoService.removeTodo(id);
+  }
   @Get('')
   async getTodo() {
     return await this.todoService.getTodo();
