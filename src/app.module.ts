@@ -10,9 +10,9 @@ import { TodoModule } from './modules/todo/todo.module';
 
 @Module({
   imports: [
-    ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', 'vue-ui/dist'),
-    }),
+    // ServeStaticModule.forRoot({
+    //   rootPath: join(__dirname, '..', 'vue-ui/dist'),
+    // }),
     QuizModule,
     TodoModule,
     TypeOrmModule.forRoot(typeOrmConfig),

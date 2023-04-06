@@ -127,7 +127,7 @@ export default {
     upMenu: false,
     menu: false,
     items: null,
-    todoUrl: 'http://localhost:3000/todo',
+    todoUrl: 'http://localhost:3010/todo',
   }),
   created() {
     fetch(this.todoUrl)
